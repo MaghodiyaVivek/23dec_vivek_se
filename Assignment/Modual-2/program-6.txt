@@ -1,0 +1,15 @@
+// WAP to print table up to given numbers 
+
+#include<stdio.h>
+int main() 
+{
+  int a,v;
+  printf("Enter number to print table:");
+  scanf("%d", &a);
+
+  for(v = 1; v <= 10; v++)
+  {
+    printf("%d * %d = %d \n", a, v, a * v);
+  }
+  return 0;
+}
