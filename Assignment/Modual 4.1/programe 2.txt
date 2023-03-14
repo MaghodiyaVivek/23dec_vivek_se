@@ -1,0 +1,23 @@
+OOP  - Object Oriented Programming
+
+Concept:
+
+1.Class
+    ->Class is a collection of data member and member function
+                                OR
+    ->Class is a blue print of the object
+
+2.Object
+    ->Object is instance of the class.
+
+3.Inheritance
+    ->Reusability of class
+
+4.Encapsulation
+    ->Wrapping up the data
+
+5.Abstraction
+    ->Hiding up the detail background detail
+    
+6.Polymorphism
+    ->One name many form
