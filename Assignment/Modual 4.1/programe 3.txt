@@ -1,0 +1,13 @@
+pop:-
+
+->it is top to down approch.
+->it concentrated on function.
+->in pop data uses globally.
+->due to global data, it is less secure language
+
+oop:-
+
+->it is a bottom-up approach.
+->it concentrated on data rather than function.
+->data is used by a associated function within the class.
+->it is more secured langage because external function can't accrss another data.
