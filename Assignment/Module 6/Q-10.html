@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q.10</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+    <div style="background-color: rgb(224, 10, 217); width: 100%; height: 30PX;">
+        <h2 style="text-align: color: rgb(1, 1, 14);">Q. 10 - How can we club two or more rows or columns into a single row or column in an HTML table? </h2>
+    <ul>
+        <li>HTML provides the rowspan and colspan attributes to combine two or more rows or columns into a single row or column in an HTML table.</li>
+            <li>The colspan attribute specifies the number of columns that a cell should span. For example, if you want to merge two cells in the first row into a single cell that spans two columns, you can use the colspan attribute like this:</li>
+            <p>
+                <table border="1px">
+                    <tr>
+                      <td colspan="2">Merged cell</td>
+                      <td>Cell 3</td>
+                    </tr>
+                    <tr>
+                      <td>Cell 4</td>
+                      <td>Cell 5</td>
+                      <td>Cell 6</td>
+                    </tr>
+                </table>
+                  
+            </p>
+            <li>In this example, the first cell in the first row spans two columns using the colspan="2" attribute.</li>
+            <li>The rowspan attribute specifies the number of rows that a cell should span. For example, if you want to merge two cells in the first column into a single cell that spans two rows, you can use the rowspan attribute like this:</li>
+            <p>
+                <table border="1px">
+                    <tr>
+                      <td rowspan="2">Merged cell</td>
+                      <td>Cell 2</td>
+                      <td>Cell 3</td>
+                    </tr>
+                    <tr>
+                      <td>Cell 5</td>
+                      <td>Cell 6</td>
+                    </tr>
+                </table>
+                  
+            </p>
+            <li>In this example, the first cell in the first column spans two rows using the rowspan="2" attribute.</li>
+
+        </li>
+
+
+    </ul>
+    </div>
+</body>
+</html>
