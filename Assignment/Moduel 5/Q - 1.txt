@@ -1,0 +1,5 @@
+1. What do you understand By Database
+Ans:-
+	A database is a collection of organized and structured data that is stored and managed on a computer system. It is designed to store, manage, and retrieve large amounts of data quickly and efficiently. A database can be used to store information related to various aspects of an organization or a business, such as customer records, employee information, inventory data, financial records, and more.
+
+Databases are essential for many applications, from simple data entry systems to complex business applications. They are used in various fields, such as finance, healthcare, education, e-commerce, and more, to store, organize, and retrieve data efficiently. Databases use different types of software and technologies to manage and store data, including relational databases, NoSQL databases, object-oriented databases, and more.

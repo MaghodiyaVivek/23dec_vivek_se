@@ -1,0 +1,7 @@
+5. What do you understand By Data Redundancy?
+Ans:-
+	Data redundancy can be problematic for several reasons. Firstly, it can 
+waste storage space, as multiple copies of the same data must be stored. 
+Secondly, it can lead to inconsistencies in the data, as changes made to 
+one copy of the data may not be reflected in other copies. This can result 
+in data discrepancies and inaccuracies.

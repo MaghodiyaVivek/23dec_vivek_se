@@ -1,0 +1,16 @@
+4. What is MF Cod Rule of RDBMS Systems?
+Ans:-
+	Rule zero
+This rule states that for a system to qualify as an RDBMS, it must be able to manage database entirely through the relational capabilities.
+Rule 1: Information rule
+Rule 2: Guaranted Access
+Rule 3: Systematic treatment of NULL
+Rule 4: Active Online Catalog
+Rule 5: Powerful and Well-Structured Language
+Rule 6: View Updation Rule
+Rule 7: Relational Level Operation
+Rule 8: Physical Data Independence
+Rule 9: Logical Data Independence
+Rule 10: Integrity Independence
+Rule 11: Distribution Independence
+Rule 12: Nonsubversion Rule
