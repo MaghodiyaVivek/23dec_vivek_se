@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <form id="bookingForm">
+        <label for="bookingType">Choice of Booking:</label>
+        <select id="bookingType" onchange="showOptions()">
+            <option value="fullDay">Full day booking</option>
+            <option value="halfDay">Half day booking</option>
+            <option value="hourly">Hourly booking</option>
+        </select>
+
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" required>
+
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" required pattern="[0-9]{10}">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="numPersons">Number of Persons:</label>
+        <input type="number" id="numPersons" required>
+
+        <div id="dateSection">
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+        </div>
+
+        <div id="timeSlotSection">
+            <label for="timeSlot">Time Slot:</label>
+            <select id="timeSlot">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+        </div>
+
+        <div id="timeSection">
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+        </div>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script>
+        function showOptions() {
+            var bookingType = document.getElementById("bookingType").value;
+            var dateSection = document.getElementById("dateSection");
+            var timeSlotSection = document.getElementById("timeSlotSection");
+            var timeSection = document.getElementById("timeSection");
+
+            dateSection.style.display = "none";
+            timeSlotSection.style.display = "none";
+            timeSection.style.display = "none";
+
+            if (bookingType === "fullDay") {
+                dateSection.style.display = "block";
+            } else if (bookingType === "halfDay") {
+                dateSection.style.display = "block";
+                timeSlotSection.style.display = "block";
+            } else if (bookingType === "hourly") {
+                dateSection.style.display = "block";
+                timeSection.style.display = "block";
+            }
+        }
+
+        function submitForm() {
+            var bookingType = document.getElementById("bookingType").value;
+            var userName = document.getElementById("userName").value;
+            var mobileNumber = document.getElementById("mobileNumber").value;
+            var email = document.getElementById("email").value;
+            var numPersons = document.getElementById("numPersons").value;
+
+            var bookingDetails = {
+                bookingType: bookingType,
+                userName: userName,
+                mobileNumber: mobileNumber,
+                email: email,
+                numPersons: numPersons
+            };
+
+            if (bookingType === "fullDay") {
+                bookingDetails.date = document.getElementById("date").value;
+            } else if (bookingType === "halfDay") {
+                bookingDetails.date = document.getElementById("date").value;
+                bookingDetails.timeSlot = document.getElementById("timeSlot").value;
+            } else if (bookingType === "hourly") {
+                bookingDetails.date = document.getElementById("date").value;
+                bookingDetails.time = document.getElementById("time").value;
+            }
+
+            console.log("Booking Details:", bookingDetails);
+            // Additional logic for submitting the form to a server or processing the data can be added here
+        }
+    </script>
+
+</body>
+</html>
